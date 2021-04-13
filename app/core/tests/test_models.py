@@ -49,7 +49,7 @@ class ModelTests(TestCase):
 
         tag = models.Tag.objects.create(
             user=sample_user(),
-            name='Vegan',
+            name='Vegan'
         )
 
         self.assertEqual(str(tag), tag.name)
